@@ -1,7 +1,18 @@
 const router = require("express").Router();
 const Movie = require("../models/Movie");
+const verify = require('../verifyToken')
 
-//GET ALL
+//Create
+
+//Update
+
+//Delete
+
+//Get
+
+//Get Random
+
+//Get All
 
 router.get("/", verify, async (req, res) => {
     if (req.user.isAdmin) {
