@@ -10,7 +10,7 @@ router.post('/', verify, async (req, res) => {
 
     try {
       const savedMovie = await newMovie.save()
-      res.status(201),json(savedMovie)
+      res.status(201).json(savedMovie)
     } catch (err) {
       res.status(500).json(err)
     }
